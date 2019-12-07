@@ -3,6 +3,7 @@ module.exports = {
 
     Query: {
         getUsers: async () => await User.find({}).exec(),
+        hello: "Hello Nigas",
     },
     Mutation: {
         addUser: async (_, args) => {
