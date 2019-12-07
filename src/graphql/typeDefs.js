@@ -7,8 +7,11 @@ type User {
         email: String
     }
     type Query {
-        getUsers: [User]
         hello: String
+        getOneUser: [User]
+        getUsers: [User]
+       
+      
     }
     type Mutation {
         addUser(userName: String!, email: String!): User
