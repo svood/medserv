@@ -8,12 +8,10 @@ type User {
     }
     type Query {
         getUsers: [User]
+        hello: String
     }
     type Mutation {
         addUser(userName: String!, email: String!): User
-    }
-    type Query {
-        hello: String
     }
 
 `;
