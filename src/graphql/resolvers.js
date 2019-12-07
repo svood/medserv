@@ -17,5 +17,5 @@ module.exports = {
     Query: {
         hello: () => 'Hello World Niga!'
     }
-    //test
+    //test2
 };
