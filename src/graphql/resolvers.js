@@ -2,7 +2,8 @@ const { User } = require('./mongo/models');
 module.exports = {
 
     Query: {
-        getUsers: async () => await User.find({}).exec()
+        getUsers: async () => await User.find({}).exec(),
+        hello: () => 'Hello World Niga!'
     },
     Mutation: {
         addUser: async (_, args) => {
@@ -14,8 +15,6 @@ module.exports = {
             }
         }
     },
-    Query: {
-        hello: () => 'Hello World Niga!'
-    }
+
     //test2
 };
