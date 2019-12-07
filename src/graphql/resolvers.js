@@ -1,7 +1,7 @@
 const { User } = require('./mongo/models');
 module.exports = {
 
-Query: {
+    Query: {
         getUsers: async () => await User.find({}).exec()
     },
     Mutation: {
@@ -9,9 +9,12 @@ Query: {
             try {
                 let response = await User.create(args);
                 return response;
-            } catch(e) {
+            } catch (e) {
                 return e.message;
             }
         }
+    },
+    Query: {
+        hello: () => 'Hello World Niga!'
     }
 };

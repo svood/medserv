@@ -12,5 +12,8 @@ type User {
     type Mutation {
         addUser(userName: String!, email: String!): User
     }
+    type Query {
+        hello: String
+    }
 
 `;
